@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi amor ❤️</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #ffd6e7, #f8a9c8, #ffe4ed);
+  color: #71334e;
+  text-align: center;
+  padding: 25px 15px;
+}
+.contenedor {
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.78);
+  border-radius: 25px;
+  box-shadow: 0 8px 30px #b95c8050;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  color: #bd527c;
+}
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.corazon {
+  font-size: 55px;
+  animation: latir 1s infinite alternate;
+}
+@keyframes latir {
+  to { transform: scale(1.2); }
+}
+button {
+  background: #d85d91;
+  color: white;
+  border: none;
+  padding: 13px 23px;
+  border-radius: 25px;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 10px;
+}
+button:hover {
+  background: #b83e73;
+}
+.fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+.fotos img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+#mensaje {
+  display: none;
+  padding: 15px;
+  background: #ffe0ed;
+  border-radius: 15px;
+}
+footer {
+  margin-top: 25px;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+  <div class="corazon">❤️</div>
+
+  <h1>Para mi vida</h1>
+  <h2>Para mi amorcito 💗</h2>
+
+  <p>
+    Quería hacerte algo especial para recordarte
+    lo importante que sos para mí.
+  </p>
+
+  <p>
+    No importa cuántos kilómetros nos separen
+    ni cuántos días pasen, siempre vas a tener
+    un lugar muy especial en mi corazón.
+  </p>
+
+  <div class="fotos">
+    <img src="foto1.jpg" alt="Nuestro recuerdo">
+    <img src="foto2.jpg" alt="Nuestro recuerdo">
+    <img src="foto3.jpg" alt="Nuestro recuerdo">
+    <img src="foto4.jpg" alt="Nuestro recuerdo">
+  </div>
+
+  <h2>Un pequeño mensaje para vos 💌</h2>
+
+  <button onclick="mostrarMensaje()">
+    Abrí tu sorpresa ❤️
+  </button>
+
+  <div id="mensaje">
+    <p>
+      Te quiero muchísimo, mi vida.
+      Gracias por formar parte de mis días,
+      por hacerme feliz y por ser alguien
+      tan especial para mí. ❤️
+    </p>
+    <p>Con muchísimo cariño, para vos. 💗</p>
+  </div>
+
+  <footer>
+    Hecho con amor ❤️
+  </footer>
+</div>
+
+<script>
+function mostrarMensaje() {
+  document.getElementById("mensaje").style.display = "block";
+}
+</script>
+
+</body>
+  </html>
+  
